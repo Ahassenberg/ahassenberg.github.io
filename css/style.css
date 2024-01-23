@@ -1,0 +1,238 @@
+@font-face {
+  font-family: Vacation;
+  src: url(../fonts/Vacation.otf);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.logo{
+  width:110px;
+  height:110px;
+  position:fixed; 
+	top:0; 
+	left:20px; 
+  padding:10px;
+  
+}
+
+nav{
+  position: fixed;
+  justify-content:space-between;
+  float: right;
+  width:45%;
+  background:#e3e4ff;
+  margin-left:1400px;
+}
+
+
+.nav-list{
+  
+  width:100%;
+  display:flex;
+  justify-content:space-evenly;
+  
+}
+
+
+li > a{
+  text-decoration:none;
+  text-transform:uppercase;
+  position:relative;
+  
+}
+
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  
+}
+
+li {
+  position: relative;
+  color: #eee; 
+  letter-spacing: 2px; text-decoration: none;
+  padding: 8px; margin: 0 18px;
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  color:#460089;
+}
+
+li::before{
+  content: "";
+  position: absolute;
+  bottom: 0; left:0;
+  width:0; height: 1.6px;
+  transition: width 0.3s ease-out;
+  background-color: #454545;
+}
+
+li:hover::before{
+  width: 100%;
+}
+
+.name{
+  font-family:'Vacation';
+  text-transform:uppercase;
+  letter-spacing: 7px;
+  font-size:3.5em;
+  color:#460089;
+  text-align:center;
+  padding:10px;
+
+}
+
+.containname{
+  display:flex;
+  position:relative;
+  justify-content:center;
+  top:200px;
+}
+
+.portrait{
+  width:600px;
+  height:600px;
+}
+
+.portraitbox{
+  display:flex;
+  margin-top:8%;
+  justify-content: center;
+  top:180px;
+}
+
+.row {
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left:16%;
+  flex: 33.33%;
+  padding: 10px;
+  grid-gap:120px;
+}
+
+.columnname {
+  height:10%;
+  margin-top:15%;
+  font-size:1.3em;
+}
+
+.column{
+  justify-content:center;
+}
+
+
+.about{
+  font-family: 'Nanum Gothic', sans-serif;
+  width:30%;
+  font-size:20px;
+  margin-top:2%;
+  text-align:justify;
+  display:block;
+}
+
+.aboutcontain{
+  display:flex;
+  justify-content:center;
+}
+
+.gallery{
+  font-family:'Vacation';
+  text-transform:uppercase;
+  letter-spacing: 7px;
+  font-size:3.5em;
+  color:#460089;
+  text-align:center;
+  padding:10px;
+  margin-top:14%;
+}
+
+
+.rowgallery {
+  display:flex;
+  justify-content:center;
+  padding: 0 4px;
+  text-align:center;
+}
+
+.columngallery{
+  max-width:50%;
+  padding: 0 4px;
+  margin-top:5%;
+ 
+}
+
+img{
+  object-fit: cover;
+}
+
+.columngallery img{
+  margin-top: 20px;
+  vertical-align: middle;
+  padding:8px;
+  height:500px;
+  width:500px;
+  
+  
+}
+
+@media screen and (max-width: 800px) {
+  .columngallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .columngallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.resume{
+  font-family:'Vacation';
+  text-transform:uppercase;
+  letter-spacing: 7px;
+  font-size:3.5em;
+  color:#460089;
+  text-align:center;
+  padding:10px;
+  margin-top:20%;
+}
+
+.resumepic{
+  display:flex;
+  justify-content: center;
+}
+
+
+.funfacts{
+  font-family:'Vacation';
+  text-transform:uppercase;
+  letter-spacing: 7px;
+  font-size:3.5em;
+  color:#460089;
+  text-align:center;
+  padding:10px;
+  margin-top:25%;
+}
+
+p{
+  font-family: 'Roboto Serif', serif;
+  width:30%;
+  font-size:20px;
+}
+
+.factcolumn{
+  display:flex;
+  width:95%;
+  
+}
+
+p{
+  text-align:justify;
+}
+
